@@ -1,0 +1,1389 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input,
+button,
+select,
+textarea{
+    outline: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: 14px;
+}
+input{
+    line-height: normal;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+@media(min-width: 1024px){
+/* begin header */
+#header{
+    width: auto;
+    height: 80px;
+    background-color: rgba( 0 , 0 , 0 , 0.7);
+}
+#header .logo{
+    padding-left: 150px;
+}
+#header .logo img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    position: absolute;
+}
+#header #nav{
+    font-weight: bold;
+    font-size: 18px;
+}
+#header #nav li{
+    display: inline-block;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+#header #nav .home-page{
+    padding-left: 320px;
+}
+#header #nav a{
+    color: #fefbf2;
+    line-height: 80px; 
+}
+/* end header */
+
+/* begin slider  */
+#slider{
+    width: 100vw;
+    height: 84vh;
+    position: relative;
+}
+#slider .blur{
+    background-color: rgba( 0 , 0 , 0 , 1 );
+}
+#slider:hover .ti-arrow-circle-left{
+    display: block;
+}
+#slider:hover .ti-arrow-circle-right{
+    display: block;
+}
+#slider .image{
+   width: 100%;
+   height: 84vh;
+   opacity: 0.5;
+}
+#slider .ti-arrow-circle-left{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 40px;
+    color: aliceblue;
+    display: none;
+}
+#slider .ti-arrow-circle-left:hover{
+    color: #daa84e;
+    cursor: pointer;
+}
+#slider .ti-arrow-circle-right{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    font-size: 40px;
+    color: aliceblue;
+    display: none;
+}
+#slider .ti-arrow-circle-right:hover{
+    color: #daa84e;
+    cursor: pointer;
+}
+#slider span{
+    display: block;
+    position: absolute;
+}
+#slider .vinh-chien-restaurant{
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: #ff7216;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#slider .hotline{
+    width: 100%;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#slider .address-hn{
+    width: 100%;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+#slider .address-hcm{
+    width: 100%;
+    top: 60vh;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+#slider .text-center a{
+    color: #d7a850;
+}
+/* end slider */
+
+/* begin restaurant-introduction */
+#restaurant-introduction{
+    color: #fff;
+    padding: 0 200px;
+    display: flex;
+    width: 100vw;
+    height: 84vh;
+    background-color: #d7a850;
+    position: relative;
+}
+#restaurant-introduction #intro{
+    width: 50%;
+    height: 84vh;
+    padding: 20px;
+}
+.title{
+    font-size: 50px;
+    font-weight: lighter;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#restaurant-introduction .video{
+    width: 100%;
+    height: 50vh;
+    border: none;
+    box-sizing: border-box;
+}
+#restaurant-introduction .sub-title{
+    padding: 5px 0;
+    opacity: 0.7;
+}
+#restaurant-introduction #sub-intro{
+    width: 50%;
+    padding: 20px;
+}
+#restaurant-introduction .introduction{
+    height: 60vh;
+    overflow-y: scroll;
+    font-weight: bold;
+}
+#restaurant-introduction p{
+    padding-bottom: 8px;
+    line-height: 1.4;
+}
+#restaurant-introduction ul{
+    padding-left: 40px;
+    line-height: 1.4;
+}
+/* end intro */
+
+
+/* begin menu */
+#menu{
+    color: #fff;
+    padding: 0 200px;
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background-color: #d7a850;
+    position: relative;
+}
+#menu .images{
+    width: 40%;
+    height: 700px;
+    padding: 20px;
+}
+#menu .image{
+    width: 50%;
+    display: flex;
+    padding-top: 10px;  
+    height: 200px;
+}
+#menu .image .img1{
+   padding-left: 10px;
+}
+#menu .menu-list{
+    padding: 20px;
+    width: 60%;
+}
+#menu .introduction{
+    height: 50vh;
+    overflow-y: scroll;
+    font-weight: bold;
+    font-size: 20px;
+}
+#menu .introduction p{
+    padding-top: 15px;
+}
+#menu .introduction span{
+    display: block;
+    padding-top: 25px;
+    color: black;
+    text-align: center;
+}
+#menu .vat{
+    text-align: center;
+    padding-top: 10px;
+}
+#menu .vat p{
+    display: inline;
+    font-weight: bold;
+}
+.menu-oder{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.sub-menu{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.sub-menu img{
+    width: 1100px;
+    height: auto;
+}
+/* end menu */
+
+/* begin booking */
+#container-booking{
+    color: #fff;
+    padding: 0 200px;
+    width: 100vw;
+    height: 84vh;
+    background-color: #d7a850;
+    display: flex;
+    position: relative;
+}
+#container-booking #content-booking{
+    width: 50%;
+    padding: 20px;  
+}
+#content-booking .table-user{
+    display: flex;
+}
+#content-booking label{
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    display: block;
+}
+.distance{
+    width: 50%;
+}
+#content-booking input{
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+}
+.Submit{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+#content-booking .input-submit{
+    width: 50%;
+    height: 50px;
+}
+#content-booking .input-submit{
+    
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    
+}
+#content-booking .input-submit:hover{
+    background-color: #554f36;
+    color: white;
+    cursor: pointer;
+}
+#content-booking .note{
+    padding: 30px 0 10px;
+    font-size: 20px;
+}
+#content-booking .open-close {
+    display: flex;
+    padding-bottom: 10px;
+}
+#container-booking .address{
+    padding: 20px;
+    width: 50%;
+}
+#container-booking iframe{
+    height: 80%;
+}
+.error{
+    font-size: 25px;
+    color: red;
+}
+/* end booking */
+
+/* begin preferential*/
+#preferential{
+    color: red;
+    padding: 0 200px;
+    width: 100vw;
+    height: 84vh;
+    background-color: #d7a850;
+    text-align: center;
+    line-height: 80vh;
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+}
+/* end preferential */
+
+/* begin recruit */
+#container-recruit .heading{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-color: #d7a850;
+    padding-top: 60px;
+    color: #fff;
+    position: relative;
+}
+#container-recruit .heading h1{
+    padding-bottom: 20px;
+    font-weight: lighter;
+    font-size: 70px;
+}
+#container-recruit .heading p{
+    font-size: 20px;
+}
+#container-recruit .title{
+    padding: 20px 200px ;
+}
+#container-recruit .title p{
+    text-transform: none;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+#container-recruit .content{
+    width: 100%;
+    color: #f0b22b;
+    padding: 0 170px;
+    display: flex;
+    font-weight: bold;
+}
+#container-recruit .sub-content{
+    width: calc(100%/3);
+    height: auto;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+#container-recruit .sub-content p:last-child{
+    font-weight: 100;
+}
+#last-page{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #8560a8;
+    color: #fff;
+    font-weight: 100;
+    font-size: 30px;
+}
+#last-page h3{
+    padding-bottom: 10px;
+}
+#last-page p{
+    font-size: 20px;
+}
+/* end recruit */
+
+/* begin gallery */
+.gallery{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba( 0 , 0 , 0 , 0.6);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#modal{
+    border: 1px solid aqua;
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+}
+#modal i{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+#modal i:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.3s;
+}
+.content-modal{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.content-modal p{
+    padding-bottom: 10px;
+}
+.show-gallery{
+    display: flex;
+}
+/* end gallery */
+
+/* begin footer */
+#footer{
+    width: 100vw;
+    height: 60px;
+    background-color: rgba( 0 , 0 , 0 , 0.7);;
+    text-align: center;
+}
+#footer .social-network li{
+    display: inline-block;
+    padding-left: 80px;
+}
+#footer .social-network a{
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+}
+}
+/* end footer */
+
+/* tablet */
+@media(min-width: 740px) and (max-width: 1023px){
+    body{
+        height: 1180px;
+    }
+    /* begin header */
+    #header{
+        width: auto;
+        height: 80px;
+        background-color: rgba( 0 , 0 , 0 , 0.7);
+    }
+    #header .logo{
+        padding-left: 50px;
+    }
+    #header .logo img{
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        position: absolute;
+    }
+    #header #nav{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    #header #nav li{
+        display: inline-block;
+        padding-right: 20px;
+        text-transform: uppercase;
+    }
+    #header #nav .home-page{
+        padding-left: 200px;
+    }
+    #header #nav a{
+        color: #fefbf2;
+        line-height: 80px; 
+    }
+    /* end header */
+    
+    /* begin slider  */
+    #slider{
+        width: 100vw;
+        height: 80%;
+        position: relative;
+    }
+    #slider .blur{
+        background-color: rgba( 0 , 0 , 0 , 1 );
+    }
+    #slider:hover .ti-arrow-circle-left{
+        display: block;
+    }
+    #slider:hover .ti-arrow-circle-right{
+        display: block;
+    }
+    #slider .image{
+       width: 100%;
+       height: 1180px;
+       opacity: 0.5;
+    }
+    #slider .ti-arrow-circle-left{
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        font-size: 40px;
+        color: aliceblue;
+        display: none;
+    }
+    #slider .ti-arrow-circle-left:hover{
+        color: #daa84e;
+        cursor: pointer;
+    }
+    #slider .ti-arrow-circle-right{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        font-size: 40px;
+        color: aliceblue;
+        display: none;
+    }
+    #slider .ti-arrow-circle-right:hover{
+        color: #daa84e;
+        cursor: pointer;
+    }
+    #slider span{
+        display: block;
+        position: absolute;
+    }
+    #slider .vinh-chien-restaurant{
+        width: 100%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+        color: #ff7216;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    #slider .hotline{
+        width: 100%;
+        top: 40vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    #slider .address-hn{
+        width: 100%;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #slider .address-hcm{
+        width: 100%;
+        top: 60vh;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #slider .text-center a{
+        color: #d7a850;
+    }
+    /* end slider */
+    
+    /* begin restaurant-introduction */
+    #restaurant-introduction{
+        color: #fff;
+        display: flex;
+        width: 100vw;
+        height: 1040px;
+        background-color: #d7a850;
+        position: relative;
+    }
+    #restaurant-introduction #intro{
+        width: 50%;
+        height: 80vh;
+        padding: 20px;
+    }
+    .title{
+        font-size: 30px;
+        font-weight: lighter;
+        padding-bottom: 16px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    #restaurant-introduction .video{
+        width: 100%;
+        height: 40vh;
+        border: none;
+        box-sizing: border-box;
+    }
+    #restaurant-introduction .sub-title{
+        padding: 5px 0;
+        opacity: 0.7;
+    }
+    #restaurant-introduction #sub-intro{
+        width: 50%;
+        padding: 20px;
+    }
+    #restaurant-introduction .introduction{
+        height: 60vh;
+        overflow-y: scroll;
+        font-weight: bold;
+    }
+    #restaurant-introduction p{
+        padding-bottom: 8px;
+        line-height: 1.4;
+    }
+    #restaurant-introduction ul{
+        padding-left: 40px;
+        line-height: 1.4;
+    }
+    /* end intro */
+    
+    
+    /* begin menu */
+    #menu{
+        color: #fff;
+        display: flex;
+        width: 100vw;
+        height: 550px;
+        background-color: #d7a850;
+        position: relative;
+    }
+    #menu .images{
+        width: 40%;
+        height: 100%;
+        padding: 20px;
+    }
+    #menu .image{
+        width: 50%;
+        display: flex;
+        padding-top: 10px;  
+        height: auto;
+    }
+    #menu .image .img1{
+       padding-left: 10px;
+    }
+    #menu .menu-list{
+        padding: 20px;
+        width: 60%;
+    }
+    #menu .introduction{
+        height: 350px;
+        overflow-y: scroll;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    #menu .introduction p{
+        padding-top: 15px;
+    }
+    #menu .introduction span{
+        display: block;
+        padding-top: 25px;
+        color: black;
+        text-align: center;
+    }
+    #menu .vat{
+        text-align: center;
+        padding-top: 10px;
+    }
+    #menu .vat p{
+        display: inline;
+        font-weight: bold;
+    }
+    .menu-oder{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .sub-menu{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .sub-menu img{
+        width: 1100px;
+        height: auto;
+    }
+    /* end menu */
+    
+    /* begin booking */
+    #container-booking{
+        color: #fff;
+        width: 100vw;
+        height: 1040px;
+        background-color: #d7a850;
+        position: relative;
+        text-align: center;
+    }
+    #container-booking #content-booking{
+        padding-top: 20px;  
+    }
+    #content-booking label{
+        color: black;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 16px;
+        display: block;
+    }
+
+    #content-booking input{
+        width: 80%;
+        height: 30px;
+        font-size: 14px;
+    }
+    .Submit{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    #content-booking .input-submit{
+        width: 50%;
+        height: 50px;
+    }
+    #content-booking .input-submit{
+        
+        background-color: black;
+        color: white;
+        font-weight: bold; 
+    }
+    #content-booking .input-submit:hover{
+        background-color: #554f36;
+        color: white;
+        cursor: pointer;
+    }
+    #content-booking .note{
+        padding: 30px 0 10px;
+        font-size: 16px;
+    }
+    #content-booking .open-close {
+        padding-bottom: 10px;
+    }
+    #container-booking .address{
+        text-align: center;
+    }
+    .address iframe{
+        padding: 0 20px;
+    }
+    .error{
+        font-size: 25px;
+        color: red;
+    }
+    /* end booking */
+    
+    /* begin preferential*/
+    #preferential{
+        color: red;
+        width: 100vw;
+        height: 1040px;
+        background-color: #d7a850;
+        text-align: center;
+        line-height: 80vh;
+        font-size: 40px;
+        font-weight: bold;
+        position: relative;
+    }
+    /* end preferential */
+    
+    /* begin recruit */
+    #container-recruit .heading{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        background-color: #d7a850;
+        padding-top: 60px;
+        color: #fff;
+        position: relative;
+    }
+    #container-recruit .heading h1{
+        padding-bottom: 20px;
+        font-weight: lighter;
+        font-size: 60px;
+    }
+    #container-recruit .title{
+        padding: 20px 200px ;
+    }
+    #container-recruit .title p{
+        text-transform: none;
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #container-recruit .content{
+        width: 100%;
+        color: #f0b22b;
+        padding: 0 170px;
+        display: flex;
+        font-weight: bold;
+    }
+    #container-recruit .sub-content{
+        width: calc(100%/3);
+        height: auto;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    #container-recruit .sub-content p:last-child{
+        font-weight: 100;
+    }
+    #last-page{
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        padding-top: 30px;
+        background-color: #8560a8;
+        color: #fff;
+        font-weight: 100;
+        font-size: 20px;
+    }
+    #last-page h3{
+        padding-bottom: 10px;
+    }
+    #last-page p{
+        font-size: 16px;
+    }
+    /* end recruit */
+    
+    /* begin gallery */
+    .gallery{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        background-color: rgba( 0 , 0 , 0 , 0.6);
+        color: black;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    #modal{
+        border: 1px solid aqua;
+        background-color: #fff;
+        width: 400px;
+        height: 200px;
+    }
+    #modal i{
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+    #modal i:hover{
+        cursor: pointer;
+        color: red;
+        transition: 0.3s;
+    }
+    .content-modal{
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    .content-modal p{
+        padding-bottom: 10px;
+    }
+    .show-gallery{
+        display: flex;
+    }
+    /* end gallery */
+    
+    /* begin footer */
+    #footer{
+        width: 100vw;
+        height: 60px;
+        background-color: rgba( 0 , 0 , 0 , 0.7);;
+        text-align: center;
+        position: relative;
+    }
+    #footer .social-network li{
+        display: inline-block;
+        padding-left: 80px;
+    }
+    #footer .social-network a{
+        color: white;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    }
+    /* end footer */
+    /* iphone */
+@media(max-width: 739px){
+   
+    /* begin header */
+    #header{
+        width: 100%;
+        height: 80px;
+        background-color: rgba( 0 , 0 , 0 , 0.7);
+        z-index: 1;
+        overflow: hidden;
+    }
+    #header .logo{
+        padding-left: 250px;
+    }
+    #header .logo img{
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        position: absolute;
+    }
+    #header #nav{
+        font-weight: bold;
+        font-size: 18px;
+        display: none;
+    }
+    #header #nav li{
+        display: inline-block;
+        padding-right: 20px;
+        text-transform: uppercase;
+    }
+    #header #nav .home-page{
+        padding-left: 200px;
+    }
+    #header #nav a{
+        color: #fefbf2;
+        line-height: 80px; 
+    }
+    #iphone i{
+        color: #fff;
+        font-size: 60px;
+        line-height: 80px;
+        padding: 10px;
+    }
+    #iphone a{
+        display: inline-block;
+        width: 200px;
+        font-size: 30px;
+        color: black;
+        background-color:rgba( 255 , 255 , 255 , 0.6);
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    /* end header */
+    
+    /* begin slider  */
+    #slider{
+        width: 100vw;
+        height: 720px;
+        position: relative;
+    }
+    #slider .blur{
+        background-color: rgba( 0 , 0 , 0 , 1 );
+    }
+    #slider:hover .ti-arrow-circle-left{
+        display: block;
+    }
+    #slider:hover .ti-arrow-circle-right{
+        display: block;
+    }
+    #slider .image{
+       width: 100%;
+       height: 844px;
+       opacity: 0.5;
+    }
+    #slider .ti-arrow-circle-left{
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        font-size: 40px;
+        color: aliceblue;
+        display: none;
+    }
+    #slider .ti-arrow-circle-left:hover{
+        color: #daa84e;
+        cursor: pointer;
+    }
+    #slider .ti-arrow-circle-right{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        font-size: 40px;
+        color: aliceblue;
+        display: none;
+    }
+    #slider .ti-arrow-circle-right:hover{
+        color: #daa84e;
+        cursor: pointer;
+    }
+    #slider span{
+        display: block;
+        position: absolute;
+    }
+    #slider .vinh-chien-restaurant{
+        width: 100%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        color: #ff7216;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    #slider .hotline{
+        width: 100%;
+        top: 30vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    #slider .address-hn{
+        width: 100%;
+        top: 60vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #slider .address-hcm{
+        width: 100%;
+        top: 70vh;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #slider .text-center a{
+        color: #d7a850;
+    }
+    /* end slider */
+    
+    /* begin restaurant-introduction */
+    #restaurant-introduction{
+        color: #fff;
+        width: 100vw;
+        background-color: #d7a850;
+        
+    }
+    #restaurant-introduction #intro{
+        padding: 20px;
+    }
+    .title{
+        font-size: 30px;
+        font-weight: lighter;
+        padding-bottom: 16px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    #restaurant-introduction .video{
+        width: 100%;
+        height: 40vh;
+        border: none;
+        box-sizing: border-box;
+    }
+    #restaurant-introduction .sub-title{
+        padding: 5px 0;
+        opacity: 0.7;
+    }
+    #restaurant-introduction #sub-intro{
+        padding: 20px;
+    }
+    #restaurant-introduction .introduction{
+        height: 60vh;
+        overflow-y: scroll;
+        font-weight: bold;
+    }
+    #restaurant-introduction p{
+        padding-bottom: 8px;
+        line-height: 1.4;
+    }
+    #restaurant-introduction ul{
+        padding-left: 40px;
+        line-height: 1.4;
+    }
+    /* end intro */
+    
+    
+    /* begin menu */
+    #menu{
+        color: #fff;
+        display: flex;
+        width: 100vw;
+        height: 550px;
+        background-color: #d7a850;
+        position: relative;
+    }
+    #menu .images{
+        width: 40%;
+        height: 100%;
+        padding: 20px;
+    }
+    #menu .image{
+        width: 50%;
+        display: flex;
+        padding-top: 10px;  
+        height: auto;
+    }
+    #menu .image .img1{
+       padding-left: 10px;
+    }
+    #menu .menu-list{
+        padding: 20px;
+        width: 60%;
+    }
+    #menu .introduction{
+        height: 350px;
+        overflow-y: scroll;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    #menu .introduction p{
+        padding-top: 15px;
+    }
+    #menu .introduction span{
+        display: block;
+        padding-top: 25px;
+        color: black;
+        text-align: center;
+    }
+    #menu .vat{
+        text-align: center;
+    }
+    #menu .vat p{
+        display: inline;
+        font-weight: bold;
+    }
+    .menu-oder{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .sub-menu{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .sub-menu img{
+        width: 1100px;
+        height: auto;
+    }
+    /* end menu */
+    
+    /* begin booking */
+    #container-booking{
+        color: #fff;
+        width: 100vw;
+        height: 1040px;
+        background-color: #d7a850;
+        position: relative;
+        text-align: center;
+    }
+    #container-booking #content-booking{
+        padding-top: 20px;  
+    }
+    #content-booking label{
+        color: black;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 16px;
+        display: block;
+    }
+
+    #content-booking input{
+        width: 80%;
+        height: 30px;
+        font-size: 14px;
+    }
+    .Submit{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    #content-booking .input-submit{
+        width: 50%;
+        height: 50px;
+    }
+    #content-booking .input-submit{
+        
+        background-color: black;
+        color: white;
+        font-weight: bold; 
+    }
+    #content-booking .input-submit:hover{
+        background-color: #554f36;
+        color: white;
+        cursor: pointer;
+    }
+    #content-booking .note{
+        padding: 30px 0 10px;
+        font-size: 16px;
+    }
+    #content-booking .open-close {
+        padding-bottom: 10px;
+    }
+    #container-booking .address{
+        text-align: center;
+    }
+    .address iframe{
+        padding: 0 20px;
+    }
+    .error{
+        font-size: 25px;
+        color: red;
+    }
+    /* end booking */
+    
+    /* begin preferential*/
+    #preferential{
+        color: red;
+        width: 100vw;
+        height: 1040px;
+        background-color: #d7a850;
+        text-align: center;
+        line-height: 80vh;
+        font-size: 40px;
+        font-weight: bold;
+        position: relative;
+    }
+    /* end preferential */
+    
+    /* begin recruit */
+    #container-recruit .heading{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        background-color: #d7a850;
+        padding-top: 60px;
+        color: #fff;
+        position: relative;
+        padding: 10px;
+    }
+    #container-recruit .heading h1{
+        padding-bottom: 20px;
+        font-weight: lighter;
+        font-size: 50px;
+    }
+    #container-recruit .title p{
+        text-transform: none;
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #container-recruit .content{
+        width: 100%;
+        color: #f0b22b;
+        padding: 20px;
+        display: flex;
+        font-weight: bold;
+    }
+    #container-recruit .sub-content{
+        width: calc(100%/3);
+        height: auto;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    #container-recruit .sub-content p:last-child{
+        font-weight: 100;
+    }
+    #last-page{
+        width: 100%;
+        height: 220px;
+        text-align: center;
+        padding-top: 30px;
+        background-color: #8560a8;
+        color: #fff;
+        font-weight: 100;
+        font-size: 20px;
+        padding: 20px;
+    }
+    #last-page h3{
+        padding-bottom: 10px;
+    }
+    #last-page p{
+        font-size: 16px;
+    }
+    /* end recruit */
+    
+    /* begin gallery */
+    .gallery{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        background-color: rgba( 0 , 0 , 0 , 0.6);
+        color: black;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    #modal{
+        border: 1px solid aqua;
+        background-color: #fff;
+        width: 400px;
+        height: 200px;
+    }
+    #modal i{
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+    #modal i:hover{
+        cursor: pointer;
+        color: red;
+        transition: 0.3s;
+    }
+    .content-modal{
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    .content-modal p{
+        padding-bottom: 10px;
+    }
+    .show-gallery{
+        display: flex;
+    }
+    /* end gallery */
+    
+    /* begin footer */
+    #footer{
+        width: 100vw;
+        height: 60px;
+        background-color: rgba( 0 , 0 , 0 , 0.7);;
+        text-align: center;
+        position: relative;
+    }
+    #footer .social-network li{
+        display: inline-block;
+        padding-left: 20px;
+    }
+    #footer .social-network a{
+        color: white;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    }
+    /* end footer */

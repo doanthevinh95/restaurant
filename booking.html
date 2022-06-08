@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <a href="http://127.0.0.1:5500/index.html#"">
+                <img src="./assets/img/logo5.png" alt="LOGO">
+            </a>
+        </div>
+        <div id="nav">
+            <ul>
+            <li class="home-page"><a href="http://127.0.0.1:5500/index.html">
+                Trang chủ
+            </a></li>
+            <li><a href="http://127.0.0.1:5500/intro.html">
+                Giới thiệu
+            </a></li>
+            <li><a href="http://127.0.0.1:5500/menu.html">
+                Thực đơn
+            </a></li>
+            <li><a href="http://127.0.0.1:5500/preferential.html">
+                Ưu đãi
+            </a></li>
+            <li><a href="#">
+                Đặt bàn
+            </a></li>
+            <li><a href="http://127.0.0.1:5500/recruit.html">
+                Tuyển dụng
+            </a></li>
+        </ul>
+        </div>
+        <div id="iphone">
+            <div id="mobie">
+                <i  class="ti-menu"></i>
+            </div>
+            <div>
+                <ul>
+                    <li class="home-page"><a href="#">
+                        Trang chủ
+                    </a></li>
+                    <li><a href="http://127.0.0.1:5500/intro.html">
+                        Giới thiệu
+                    </a></li>
+                    <li><a href="http://127.0.0.1:5500/menu.html">
+                        Thực đơn
+                    </a></li>
+                    <li><a href="http://127.0.0.1:5500/preferential.html">
+                        Ưu đãi
+                    </a></li>
+                    <li><a href="http://127.0.0.1:5500/booking.html">
+                        Đặt bàn
+                    </a></li>
+                    <li><a href="http://127.0.0.1:5500/recruit.html">
+                        Tuyển dụng
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container-booking">
+        <div id="content-booking">
+            <form id="apply">
+                <div class="title">
+                    <h3 class="title">ĐẶT BÀN TRỰC TUYẾN</h3>
+                </div>
+                <div class="table-user">
+                    <div class="distance">
+                        <div class="form-control">
+                            <label>Tên khách hàng:</label>
+                            <small>*</small>
+                            <input type="text" required id="user-input">
+                        </div>
+                        <div class="form-control">
+                            <label>E-mail:</label>
+                            <small>*</small>
+                            <input type="email" required id="mail-input">
+                        </div>
+                        <div class="form-control">
+                            <label>Số khách:</label>
+                            <small>*</small>
+                            <input type="number" required id="people-input">
+                        </div>
+                    </div>
+                    <div class="distance">
+                        <div class="form-control">
+                            <label>Số điện thoại:</label>
+                            <small>*</small>
+                            <input type="text" required  id="phone-input">
+                        </div>
+                        <div class="form-control">
+                            <label>Ngày đặt:</label>
+                            <small>*</small>
+                            <input type="datetime-local" required  id="date-input">
+                        </div>
+                        <div class="Submit">
+                            <input type="submit" class="input-submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="note">
+                <p>Nhân viên chúng tôi sẽ liên lạc với quý khách trong vòng 24h để xác nhận</p>
+            </div>
+            <div class="open-close">
+                <h4>Mở Cửa:</h4>
+                <em>10:00 AM</em>
+            </div>
+            <div class="open-close">
+                <h4>Đóng Cửa:</h4>
+                <em>11:00 PM</em>
+            </div>
+        </div>
+        <div class="address">
+            <div class="title">
+                <h3 class="title">ĐỊA CHỈ NHÀ HÀNG</h3>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7448.608552239326!2d105.80468592403614!3d21.02050779401121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab44846c7733%3A0x192b9ed2a5a9f345!2smindX%20Coworking%20Space!5e0!3m2!1svi!2s!4v1653812568128!5m2!1svi!2s" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="gallery">
+        <div id="modal">
+            <div class="header-modal">
+                <i class="ti-close"></i>
+            </div>
+            <div class="content-modal">
+                <p>Đặt bàn thành công</p>
+                <p>Cám ơn quý khách</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="social-network">
+            <ul>
+                <li><a href="https://www.facebook.com/Vinh-chi%E1%BA%BFn-Restaurant-115471441172363" class="ti-facebook" target="_blank"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCaqMsgjuLnQtu4mKQFqGL8A" class="ti-youtube" target="_blank"></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox" class="ti-google" target="_blank"></a></li>
+                <li><a href="https://www.instagram.com/restaurantvinhchien/" class="ti-instagram" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./assets/javascript/main.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
